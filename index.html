@@ -13,13 +13,14 @@
   <body>
     <div ng-controller="module1-controller">
     <div class="form-group" >
+      What did you have for lunch? &nbsp;
 <input type="text" ng-model="name" ng-blur="clear()" >
 <br/>
 <button ng-click="foodFinder()" >Check if too much</button>
 
     </div>
     <div class="form-group message">
-          Inside my input {{text}} {{name}}
+          {{text}}
         </div>
       </div>
   </body>

@@ -10,14 +10,19 @@ $scope.text="";
 $scope.foodFinder = function(){
   var array = splitString($scope.name);
   var len = array.length;
-  if(len>1 && len<=3){
+
+  if(array[0]==null || array[0]=="")
+  {
+      $scope.text = "Please Enter data first.";
+  }
+  else if(len>0 && len<=3){
   $scope.text = "Enjoy!";
 }
   else  if (len>3) {
-      $scope.text = "Too much";
+      $scope.text = "Too much!";
   }
-  else if (len==0) {
-    $scope.text = "Enter data.";
+  else {
+    $scope.text = "Please Enter data first.";
   }
 }
 
