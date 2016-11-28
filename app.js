@@ -1,9 +1,9 @@
 (function () {
 'use strict';
 
-angular.module('module1-solution', [])
+angular.module('LunchCheck', [])
 
-.controller('module1-controller', function ($scope) {
+.controller('LunchCheckController', function ($scope) {
 $scope.name ="";
 $scope.text="";
 
